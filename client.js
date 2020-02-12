@@ -18,17 +18,17 @@ const connect = function() {
             conn.write("Name: SER"), 5000);
         });
 
-        conn.on('connect', () => {  setTimeout(() =>
-            conn.write("Move: up"), 7000);
-        });
+        // conn.on('connect', () => {  setTimeout(() =>
+        //     conn.write("Move: up"), 7000);
+        // });
 
-        conn.on('connect', () => {  setTimeout(() =>
-            conn.write("Move: up"), 8000);
-        });
+        // conn.on('connect', () => {  setTimeout(() =>
+        //     conn.write("Move: up"), 8000);
+        // });
 
-        conn.on('connect', () => {  setTimeout(() =>
-            conn.write("Move: right"), 9000);
-        });
+        // conn.on('connect', () => {  setTimeout(() =>
+        //     conn.write("Move: right"), 9000);
+        // });
 
       return conn;
     } 
