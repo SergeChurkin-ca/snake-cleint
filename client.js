@@ -11,14 +11,25 @@ const connect = function() {
         });
     
         conn.on('connect', () => {
-            console.log('connected')
+            console.log('Hello, playa! Now you are connected to our phantastik server')
         });
 
-        conn.on('connect', () => {
-            conn.write("Name: SER");
+        conn.on('connect', () => { setTimeout(() => 
+            conn.write("Name: SER"), 5000);
         });
 
-      
+        conn.on('connect', () => {  setTimeout(() =>
+            conn.write("Move: up"), 7000);
+        });
+
+        conn.on('connect', () => {  setTimeout(() =>
+            conn.write("Move: up"), 8000);
+        });
+
+        conn.on('connect', () => {  setTimeout(() =>
+            conn.write("Move: right"), 9000);
+        });
+
       return conn;
     } 
 
