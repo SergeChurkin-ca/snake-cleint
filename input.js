@@ -23,7 +23,9 @@ const setUpInput = function(conn) {
     } if (key === "a") {
         connection.write("Move: left");
     }  if (key === "d") {
-        connection.write("Move: right");
+        connection.write("Move: right"); 
+    }  if (key === "r") {
+        connection.write("shh");
     }
   };
   
